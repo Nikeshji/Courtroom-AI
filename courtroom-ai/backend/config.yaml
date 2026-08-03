@@ -1,0 +1,13 @@
+default_model: "llama3.1:8b"
+default_provider: "ollama"
+
+agents:
+  case_manager:
+    model: "llama3.1:8b"
+    max_tokens: 2048
+  legal_research:
+    model: "llama3.1:8b"
+    max_tokens: 4096
+  judge:
+    model: "llama3.1:8b"
+    max_tokens: 4096

@@ -1,0 +1,30 @@
+from typing import TypedDict, Optional, Any, Dict
+
+class CourtState(TypedDict, total=False):
+    complaint: str
+    case_intake: Optional[Dict[str, Any]]
+    entities: Optional[str]
+    accused: Optional[str]
+    victim: Optional[str]
+    offence: Optional[str]
+    facts: Optional[str]
+    legal_research: Optional[Dict[str, Any]]
+    laws: Optional[str]
+    sections_applied: Optional[str]
+    precedents: Optional[str]
+    consultant: Optional[str]
+    top_consultant: Optional[str]
+    pros_r1: Optional[str]
+    def_r1: Optional[str]
+    pros_r2: Optional[str]
+    def_r2: Optional[str]
+    judge_verdict: Optional[Dict[str, Any]]
+    verdict: Optional[str]
+    verdict_short: Optional[str]
+    confidence: Optional[int]
+    reasoning: Optional[str]
+    probable_punishment: Optional[str]
+    headline: Optional[str]
+    report: Optional[str]
+    is_running: bool
+    execution_times: Dict[str, float]
